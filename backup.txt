@@ -1,0 +1,27 @@
+
+    // $msg = urlencode("Berhasil Melakukan Absensi");
+    // header("location: index.php?msg");
+    
+    // echo "<SCRIPT> 
+    //       window.location.replace('index.php');
+    //       alert('Berhasil melakukan absensi');
+    //     </SCRIPT>";
+
+    // echo "<script>
+    //         window.setTimeout(function() {
+    //           $('.alert').fadeTo(500, 0).slideUp(500, function(){
+    //             $(this).remove(); 
+    //           });
+    //         }, 5000);
+    //       </script>";
+
+
+
+
+    <?php
+        if (isset($_GET['msg'])) {
+        $pesan_berhasil = "Berhasil Melakukan Absensi";
+        // echo $pesan_berhasil;
+        echo '<div class="alert alert-dismissible alert-success">' . $pesan_berhasil . '</div>';
+        }
+    ?>
